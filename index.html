@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Pomodoro time</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="pomodoro_item">
+        <div class="setting_box hidden" id="box">
+          <h1 class="sett">Settings</h1>
+          <hr />
+          <div class="settings_item">
+            <p class="sound">Sound</p>
+            <ion-icon
+              name="radio-button-on-outline"
+              class="Off_on active"
+            ></ion-icon>
+          </div>
+
+          <div class="settings_item">
+            <p class="vibration">Vibration</p>
+            <ion-icon
+              name="radio-button-on-outline"
+              class="Off_on off"
+            ></ion-icon>
+          </div>
+          <h1 class="timer">Timer</h1>
+          <hr />
+
+          <div class="work_item">
+            <p class="work">Work session</p>
+            <p class="work_min"><span>25</span> min</p>
+          </div>
+          <div class="work_item">
+            <p class="work">Short break</p>
+            <p class="work_min"><span>25</span> min</p>
+          </div>
+          <div class="work_item">
+            <p class="work">Long break</p>
+            <p class="work_min"><span>25</span> min</p>
+          </div>
+        </div>
+
+        <button class="setting">
+          <ion-icon name="settings-outline" id="btn"></ion-icon>
+        </button>
+        <div class="pomodoro_box" id="back">
+          <div class="timers">
+            <h1 class="number minutes">25</h1>
+            <h1 class="number seconds">00</h1>
+          </div>
+
+          <div class="task">
+            <p class="task task-name">Task Name</p>
+          </div>
+          <div class="count">
+            <p class="count_num count_display">0 / 4</p>
+            <p class="count_num count_display-text">Work time</p>
+          </div>
+
+          <div class="submit_icons">
+            <ion-icon
+              name="pause-circle-outline"
+              class="icons_pause pause"
+            ></ion-icon>
+            <ion-icon
+              name="refresh-circle-outline"
+              class="icons_pause reset"
+            ></ion-icon>
+            <ion-icon
+              name="play-circle-outline"
+              class="icons_pause play"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="pomodoro_item">
+      <button class="setting">
+        <ion-icon name="settings-outline"></ion-icon>
+      </button>
+      <div class="pomodoro_box">
+        <div class="timers">
+          <h1 class="number">25</h1>
+          <h1 class="number">00</h1>
+        </div>
+
+        <div class="task">
+          <p class="task">Task Name</p>
+        </div>
+        <div class="count">
+          <p class="count_num">0 / 4</p>
+          <p class="count_num">Count</p>
+        </div>
+
+        <div class="submit_icons">
+          <ion-icon name="pause-circle-outline" class="icons_pause"></ion-icon>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="setting_box">
+      <h1 class="sett">Settings</h1>
+      <hr />
+      <div class="settings_item">
+        <p class="sound">Sound</p>
+        <ion-icon
+          name="radio-button-on-outline"
+          class="Off_on active"
+        ></ion-icon>
+      </div>
+
+      <div class="settings_item">
+        <p class="vibration">Vibration</p>
+        <ion-icon name="radio-button-on-outline" class="Off_on off"></ion-icon>
+      </div>
+      <h1 class="timer">Timer</h1>
+      <hr />
+
+      <div class="work_item">
+        <p class="work">Work session</p>
+        <p class="work_min"><span>25</span> min</p>
+      </div>
+      <div class="work_item">
+        <p class="work">Short break</p>
+        <p class="work_min"><span>25</span> min</p>
+      </div>
+      <div class="work_item">
+        <p class="work">Long break</p>
+        <p class="work_min"><span>25</span> min</p>
+      </div>
+      <hr class="end_border" />
+    </div> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
